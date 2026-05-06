@@ -11,6 +11,7 @@
 
     <title>Document</title>
   </head>
+
   <body>
     <!doctype html>
     <html lang="en">
@@ -20,71 +21,58 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <title>School Education Website</title>
       </head>
+
       <body class="bg-[#f7f3ee] text-[#262626]">
-        <header class="mx-auto max-w-[1440px] px-4 py-5 md:px-8 lg:px-12">
-          <div
-            class="mb-4 flex items-center justify-center rounded-[14px] border-2 border-[#262626] bg-[#fff5ef] px-4 py-4 text-center text-sm font-medium shadow-[4px_4px_0_0_#262626] sm:text-lg md:text-xl"
-          >
-            Admission is Open, Grab your seat now
-          </div>
+       <header class="mx-auto max-w-[1440px] px-4 py-5 md:px-8 lg:px-12">
+  <div
+    class="mb-4 flex items-center justify-center rounded-[14px] border-2 border-[#262626] bg-[#fff5ef] px-4 py-4 text-center text-sm font-medium shadow-[4px_4px_0_0_#262626] sm:text-lg md:text-xl"
+  >
+    Admission is Open, Grab your seat now
+  </div>
 
-          <div
-            class="overflow-hidden rounded-[18px] border-2 border-[#262626] bg-white shadow-[6px_6px_0_0_#262626]"
-          >
-            <div
-              class="flex flex-col lg:flex-row lg:items-stretch lg:justify-between"
-            >
-              <a
-                href="#"
-                class="flex items-center gap-3 border-b-2 border-[#262626] bg-[#ff8f5a] px-6 py-5 lg:border-b-0 lg:border-r-2"
-              >
-                <span
-                  class="grid h-11 w-11 place-items-center rounded-full border-2 border-[#262626] bg-[#fff5ef]"
-                >
-                  <img src="/src/assets/shape-14.svg" alt="logo" />
-                </span>
-                <div>
-                  <p class="text-xl font-extrabold leading-none">
-                    Little Learners
-                  </p>
-                </div>
-              </a>
+  <div
+    class="overflow-hidden rounded-[18px] border-2 border-[#262626] bg-white shadow-[6px_6px_0_0_#262626]"
+  >
+    <div class="flex items-center justify-between">
+      
+      <a
+        href="#"
+        class="flex items-center gap-3 bg-[#ff8f5a] px-6 py-5 lg:border-r-2 border-[#262626]"
+      >
+        <span
+          class="grid h-11 w-11 place-items-center "
+        >
+          <img src="/src/assets/icons/shape-14.png" alt="logo" />
+        </span>
 
-              <nav class="flex flex-1 flex-col lg:flex-row lg:justify-end">
-                <a
-                  href="#"
-                  class="border-b-2 border-[#262626] px-6 py-4 text-lg font-medium transition hover:bg-[#fff5ef] lg:border-b-0 lg:border-l-2"
-                  >Home</a
-                >
-                <a
-                  href="#"
-                  class="border-b-2 border-[#262626] px-6 py-4 text-lg font-medium transition hover:bg-[#fff5ef] lg:border-b-0 lg:border-l-2"
-                  >About Us</a
-                >
-                <a
-                  href="#"
-                  class="border-b-2 border-[#262626] px-6 py-4 text-lg font-medium transition hover:bg-[#fff5ef] lg:border-b-0 lg:border-l-2"
-                  >Academics</a
-                >
-                <a
-                  href="#"
-                  class="border-b-2 border-[#262626] px-6 py-4 text-lg font-medium transition hover:bg-[#fff5ef] lg:border-b-0 lg:border-l-2"
-                  >Admissions</a
-                >
-                <a
-                  href="#"
-                  class="border-b-2 border-[#262626] px-6 py-4 text-lg font-medium transition hover:bg-[#fff5ef] lg:border-b-0 lg:border-l-2"
-                  >Student Life</a
-                >
-                <a
-                  href="#"
-                  class="bg-[#ffae80] px-6 py-4 text-lg font-medium transition hover:bg-[#ff9b64] lg:border-l-2"
-                  >Contact</a
-                >
-              </nav>
-            </div>
-          </div>
-        </header>
+        <p class="text-xl font-extrabold leading-none">
+          Little Learners
+        </p>
+      </a>
+
+    
+      <nav class="hidden lg:flex">
+        <a href="#" class="border-l-2 border-[#262626] px-6 py-4 text-lg font-medium hover:bg-[#fff5ef]">Home</a>
+        <a href="#" class="border-l-2 border-[#262626] px-6 py-4 text-lg font-medium hover:bg-[#fff5ef]">About Us</a>
+        <a href="#" class="border-l-2 border-[#262626] px-6 py-4 text-lg font-medium hover:bg-[#fff5ef]">Academics</a>
+        <a href="#" class="border-l-2 border-[#262626] px-6 py-4 text-lg font-medium hover:bg-[#fff5ef]">Admissions</a>
+        <a href="#" class="border-l-2 border-[#262626] px-6 py-4 text-lg font-medium hover:bg-[#fff5ef]">Student Life</a>
+        <a href="#" class="border-l-2 border-[#262626] bg-[#ffae80] px-6 py-4 text-lg font-medium hover:bg-[#ff9b64]">Contact</a>
+      </nav>
+
+      
+      <details class="relative lg:hidden">
+        <summary
+          class="list-none cursor-pointer px-6 py-5 text-3xl font-bold"
+        >
+          ☰
+        </summary>
+
+        
+      </details>
+    </div>
+  </div>
+</header>
         <section class="container mx-auto xl:px-40 py-8">
           <div class="grid grid-cols-2 gap-10 items-center">
             <div
@@ -153,9 +141,7 @@
             </p>
           </div>
 
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12"
-          >
+          <div class="grid grid grid-cols-3 gap-6 gap-x-6 gap-y-12">
             <div
               class="relative bg-white border-2 border-[#262626] rounded-lg p-8 shadow-[5px_5px_0_0_#262626]"
             >
@@ -252,10 +238,544 @@
                 emotional, and physical development.
               </p>
             </div>
-
           </div>
         </section>
+        <section class="container mx-auto xl:px-40 py-8">
+          <div
+            class="border-2 border-[#262626] bg-[#fff5ef] rounded-lg px-6 py-2 w-fit mx-auto flex items-center justify-center"
+          >
+            <p class="text-sm font-outfit whitespace-nowrap">
+              Children Deserve Bright Future
+            </p>
+          </div>
 
+          <div class="flex flex-col items-center gap-6 mt-3 mb-16">
+            <h1 class="font-raleway font-bold text-4xl">Our Benefits</h1>
+            <p class="text-center font-outfit max-w-3xl">
+              With a dedicated team of experienced educators...
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div
+              class="border-2 border-[#262626] rounded-lg bg-white p-8 text-center shadow-[5px_5px_0_0_#262626]"
+            >
+              <img
+                src="/src/assets/icons/Icon (1).png"
+                class="w-16 h-16 mx-auto rounded-full border border-[#262626]"
+                alt=""
+              />
+              <h3 class="font-raleway font-bold text-xl mt-4">Jennifer B</h3>
+              <div class="flex justify-center gap-1 mt-4 text-orange-400">
+                ★★★★★
+              </div>
+              <p class="font-outfit mt-6 leading-relaxed">
+                Little Learners Academy has been a second home...
+              </p>
+            </div>
+
+            <div
+              class="border-2 border-[#262626] rounded-lg bg-white p-8 text-center shadow-[5px_5px_0_0_#262626]"
+            >
+              <img
+                src="/src/assets/icons/Icon (1).png"
+                class="w-16 h-16 mx-auto rounded-full border border-[#262626]"
+                alt=""
+              />
+              <h3 class="font-raleway font-bold text-xl mt-4">Jennifer B</h3>
+              <div class="flex justify-center gap-1 mt-4 text-orange-400">
+                ★★★★★
+              </div>
+              <p class="font-outfit mt-6 leading-relaxed">
+                Little Learners Academy has been a second home...
+              </p>
+            </div>
+
+            <div
+              class="border-2 border-[#262626] rounded-lg bg-white p-8 text-center shadow-[5px_5px_0_0_#262626]"
+            >
+              <img
+                src="/src/assets/icons/Icon (1).png"
+                class="w-16 h-16 mx-auto rounded-full border border-[#262626]"
+                alt=""
+              />
+              <h3 class="font-raleway font-bold text-xl mt-4">Jennifer B</h3>
+              <div class="flex justify-center gap-1 mt-4 text-orange-400">
+                ★★★★★
+              </div>
+              <p class="font-outfit mt-6 leading-relaxed">
+                Little Learners Academy has been a second home...
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="container mx-auto xl:px-40 py-8">
+          <!-- Top Label -->
+          <div
+            class="border-2 border-[#262626] bg-[#fff5ef] rounded-lg px-6 py-2 w-fit mx-auto flex items-center justify-center"
+          >
+            <p class="text-sm font-outfit whitespace-nowrap">
+              Solutions For The Doubts
+            </p>
+          </div>
+
+          <!-- Heading -->
+          <div class="flex flex-col items-center gap-6 mt-3 mb-16">
+            <h1 class="font-raleway font-bold text-4xl text-center">
+              Frequently Asked Questions
+            </h1>
+
+            <p class="text-center font-outfit max-w-3xl">
+              Find all the essential information you need in our FAQ section,
+              designed to address the most frequently asked questions and help
+              you make informed decisions for your child's education.
+            </p>
+          </div>
+
+          <!-- FAQ Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+            <!-- Open Card -->
+            <div
+              class="border-2 border-[#262626] rounded-xl p-6 bg-white shadow-[4px_4px_0_0_#262626]"
+            >
+              <div
+                class="flex justify-between items-start border-b border-gray-300 pb-4"
+              >
+                <h3 class="font-raleway font-semibold text-lg max-w-[90%]">
+                  What are the school hours at Little Learners Academy?
+                </h3>
+
+                <span
+                  class="w-7 h-7 border border-[#262626] rounded-md flex items-center justify-center text-sm bg-[#fff5ef]"
+                >
+                  -
+                </span>
+              </div>
+
+              <p class="mt-4 text-sm text-gray-600 leading-relaxed font-outfit">
+                Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday.
+                We also offer extended care options for parents who need early
+                drop-off or late pick-up.
+              </p>
+            </div>
+
+            <!-- Closed Card -->
+            <div class="border-2 border-[#262626] rounded-xl p-6 bg-[#fffaf5]">
+              <div class="flex justify-between items-center">
+                <h3 class="font-raleway font-semibold text-lg max-w-[90%]">
+                  Is there a uniform policy for students?
+                </h3>
+
+                <span
+                  class="w-7 h-7 border border-[#262626] rounded-md flex items-center justify-center text-sm bg-white"
+                >
+                  +
+                </span>
+              </div>
+            </div>
+
+            <!-- Closed Card -->
+            <div class="border-2 border-[#262626] rounded-xl p-6 bg-[#fffaf5]">
+              <div class="flex justify-between items-center">
+                <h3 class="font-raleway font-semibold text-lg max-w-[90%]">
+                  What extracurricular activities are available?
+                </h3>
+
+                <span
+                  class="w-7 h-7 border border-[#262626] rounded-md flex items-center justify-center text-sm bg-white"
+                >
+                  +
+                </span>
+              </div>
+            </div>
+
+            <!-- Closed Card -->
+            <div class="border-2 border-[#262626] rounded-xl p-6 bg-[#fffaf5]">
+              <div class="flex justify-between items-center">
+                <h3 class="font-raleway font-semibold text-lg max-w-[90%]">
+                  How do you handle discipline and behavior management?
+                </h3>
+
+                <span
+                  class="w-7 h-7 border border-[#262626] rounded-md flex items-center justify-center text-sm bg-white"
+                >
+                  +
+                </span>
+              </div>
+            </div>
+
+            <!-- Closed Card -->
+            <div class="border-2 border-[#262626] rounded-xl p-6 bg-[#fffaf5]">
+              <div class="flex justify-between items-center">
+                <h3 class="font-raleway font-semibold text-lg max-w-[90%]">
+                  Do you provide transportation services?
+                </h3>
+
+                <span
+                  class="w-7 h-7 border border-[#262626] rounded-md flex items-center justify-center text-sm bg-white"
+                >
+                  +
+                </span>
+              </div>
+            </div>
+
+            <!-- Closed Card -->
+            <div class="border-2 border-[#262626] rounded-xl p-6 bg-[#fffaf5]">
+              <div class="flex justify-between items-center">
+                <h3 class="font-raleway font-semibold text-lg max-w-[90%]">
+                  How can parents stay updated on their child’s progress?
+                </h3>
+
+                <span
+                  class="w-7 h-7 border border-[#262626] rounded-md flex items-center justify-center text-sm bg-white"
+                >
+                  +
+                </span>
+              </div>
+            </div>
+            <div class="border-2 border-[#262626] rounded-xl p-6 bg-[#fffaf5]">
+              <div class="flex justify-between items-center">
+                <h3 class="font-raleway font-semibold text-lg max-w-[90%]">
+                  How can parents stay updated on their child’s progress?
+                </h3>
+
+                <span
+                  class="w-7 h-7 border border-[#262626] rounded-md flex items-center justify-center text-sm bg-white"
+                >
+                  +
+                </span>
+              </div>
+            </div>
+            <div class="border-2 border-[#262626] rounded-xl p-6 bg-[#fffaf5]">
+              <div class="flex justify-between items-center">
+                <h3 class="font-raleway font-semibold text-lg max-w-[90%]">
+                  How can parents stay updated on their child’s progress?
+                </h3>
+
+                <span
+                  class="w-7 h-7 border border-[#262626] rounded-md flex items-center justify-center text-sm bg-white"
+                >
+                  +
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="container mx-auto xl:px-40 py-16">
+         
+          <div
+            class="border-2 border-[#262626] bg-[#fff5ef] rounded-lg px-6 py-2 w-fit mx-auto flex items-center justify-center shadow-[4px_4px_0_0_#262626]"
+          >
+            <p class="text-sm font-outfit whitespace-nowrap">Explore More</p>
+          </div>
+
+          
+          <div class="flex flex-col items-center gap-6 mt-6 mb-16">
+            <h1 class="font-raleway font-bold text-5xl text-center">
+              Navigate through our Pages
+            </h1>
+
+            <p
+              class="text-center font-outfit max-w-3xl text-gray-600 leading-relaxed"
+            >
+              Your gateway to discovering a wealth of valuable information about
+              our kindergarten school. Feel free to explore and learn more about
+              the enriching experiences that await your child.
+            </p>
+          </div>
+
+         
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div
+              class="bg-white border-2 border-[#262626] rounded-xl p-10 shadow-[6px_6px_0_0_#262626] flex flex-col justify-between"
+            >
+              <div>
+                <h2 class="font-raleway font-bold text-3xl text-center">
+                  About Us
+                </h2>
+
+                
+                <div class="flex items-center gap-3 my-8">
+                  <div
+                    class="w-3 h-3 rounded-full border-2 border-[#262626]"
+                  ></div>
+
+                  <div
+                    class="flex-1 h-[4px] bg-repeat-x"
+                    style="
+                      background-image: repeating-linear-gradient(
+                        to right,
+                        #c97b49 0,
+                        #c97b49 24px,
+                        transparent 24px,
+                        transparent 36px
+                      );
+                    "
+                  ></div>
+
+                  <div
+                    class="w-3 h-3 rounded-full border-2 border-[#262626]"
+                  ></div>
+                </div>
+
+                <p
+                  class="font-outfit text-sm text-gray-600 leading-relaxed text-center"
+                >
+                  Discover our Mission, Values, and our unwavering commitment to
+                  providing the best learning experience for your child.
+                </p>
+              </div>
+
+              
+              <button
+                class="mt-10 w-full border-2 border-[#262626] rounded-lg py-3 bg-[#ffddc7] font-medium shadow-[3px_3px_0_0_#262626] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition"
+              >
+                Learn More →
+              </button>
+            </div>
+
+            
+            <div
+              class="bg-white border-2 border-[#262626] rounded-xl p-10 shadow-[6px_6px_0_0_#262626] flex flex-col justify-between"
+            >
+              <div>
+                <h2 class="font-raleway font-bold text-3xl text-center">
+                  Academics
+                </h2>
+
+                <div class="flex items-center gap-3 my-8">
+                  <div
+                    class="w-3 h-3 rounded-full border-2 border-[#262626]"
+                  ></div>
+                  <div
+                    class="flex-1 h-[4px] bg-repeat-x"
+                    style="
+                      background-image: repeating-linear-gradient(
+                        to right,
+                        #c97b49 0,
+                        #c97b49 24px,
+                        transparent 24px,
+                        transparent 36px
+                      );
+                    "
+                  ></div>
+                  <div
+                    class="w-3 h-3 rounded-full border-2 border-[#262626]"
+                  ></div>
+                </div>
+
+                <p
+                  class="font-outfit text-sm text-gray-600 leading-relaxed text-center"
+                >
+                  Explore our comprehensive academic programs designed to
+                  stimulate young minds and encourage a love for learning.
+                </p>
+              </div>
+
+              <button
+                class="mt-10 w-full border-2 border-[#262626] rounded-lg py-3 bg-[#ffddc7] font-medium shadow-[3px_3px_0_0_#262626] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition"
+              >
+                Learn More →
+              </button>
+            </div>
+
+            
+            <div
+              class="bg-white border-2 border-[#262626] rounded-xl p-10 shadow-[6px_6px_0_0_#262626] flex flex-col justify-between"
+            >
+              <div>
+                <h2 class="font-raleway font-bold text-3xl text-center">
+                  Student Life
+                </h2>
+
+                <div class="flex items-center gap-3 my-8">
+                  <div
+                    class="w-3 h-3 rounded-full border-2 border-[#262626]"
+                  ></div>
+                  <div
+                    class="flex-1 h-[4px] bg-repeat-x"
+                    style="
+                      background-image: repeating-linear-gradient(
+                        to right,
+                        #c97b49 0,
+                        #c97b49 24px,
+                        transparent 24px,
+                        transparent 36px
+                      );
+                    "
+                  ></div>
+                  <div
+                    class="w-3 h-3 rounded-full border-2 border-[#262626]"
+                  ></div>
+                </div>
+
+                <p
+                  class="font-outfit text-sm text-gray-600 leading-relaxed text-center"
+                >
+                  Peek into the vibrant and enriching world of Student Life at
+                  Little Learners Academy.
+                </p>
+              </div>
+
+              <button
+                class="mt-10 w-full border-2 border-[#262626] rounded-lg py-3 bg-[#ffddc7] font-medium shadow-[3px_3px_0_0_#262626] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition"
+              >
+                Learn More →
+              </button>
+            </div>
+
+            <!-- Card -->
+            <div
+              class="bg-white border-2 border-[#262626] rounded-xl p-10 shadow-[6px_6px_0_0_#262626] flex flex-col justify-between"
+            >
+              <div>
+                <h2 class="font-raleway font-bold text-3xl text-center">
+                  Admissions
+                </h2>
+
+                <div class="flex items-center gap-3 my-8">
+                  <div
+                    class="w-3 h-3 rounded-full border-2 border-[#262626]"
+                  ></div>
+                  <div
+                    class="flex-1 h-[4px] bg-repeat-x"
+                    style="
+                      background-image: repeating-linear-gradient(
+                        to right,
+                        #c97b49 0,
+                        #c97b49 24px,
+                        transparent 24px,
+                        transparent 36px
+                      );
+                    "
+                  ></div>
+                  <div
+                    class="w-3 h-3 rounded-full border-2 border-[#262626]"
+                  ></div>
+                </div>
+
+                <p
+                  class="font-outfit text-sm text-gray-600 leading-relaxed text-center"
+                >
+                  Learn about our Enrollment Process and how to secure your
+                  child's place at Little Learners Academy.
+                </p>
+              </div>
+
+              <button
+                class="mt-10 w-full border-2 border-[#262626] rounded-lg py-3 bg-[#ffddc7] font-medium shadow-[3px_3px_0_0_#262626] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition"
+              >
+                Learn More →
+              </button>
+            </div>
+          </div>
+        </section>
+        <footer class="container mx-auto xl:px-40 py-12">
+          <div
+            class="bg-white border-2 border-[#262626] rounded-xl p-10 shadow-[6px_6px_0_0_#262626]"
+          >
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+             
+              <div class="lg:col-span-2">
+                <div class="flex items-center gap-2 mb-4">
+                  <img
+                    src="/src/assets/icons//logo 2.svg"
+                    alt=""
+                    class="w-8 h-8"
+                  />
+                  <h2 class="font-raleway font-bold">Little Learners</h2>
+                </div>
+
+                <p class="font-outfit text-sm max-w-sm mb-6">
+                  We believe in the power of play to foster creativity,
+                  problem-solving skills, and imagination.
+                </p>
+
+                <div class="space-y-3 text-sm font-outfit">
+                  <div class="flex items-center gap-2">
+                    <img src="/src/assets/icons/email.svg" alt="" />
+                    <p>hello@littlelearners.com</p>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <img src="/src/assets/icons/phone.svg" alt="" />
+                    <p>+91 91813 23 2309</p>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <img src="/src/assets/icons/location.svg" alt="" />
+                    <p>Somewhere in the World</p>
+                  </div>
+                </div>
+              </div>
+
+             
+              <div>
+                <h3 class="font-raleway font-bold mb-4">Home</h3>
+                <ul class="space-y-3 text-sm font-outfit">
+                  <li>Features</li>
+                  <li>Our Testimonials</li>
+                  <li>FAQ</li>
+                </ul>
+              </div>
+
+            
+              <div>
+                <h3 class="font-raleway font-bold mb-4">About Us</h3>
+                <ul class="space-y-3 text-sm font-outfit">
+                  <li>Our Mission</li>
+                  <li>Our Vision</li>
+                  <li>Awards and Recognitions</li>
+                  <li>History</li>
+                  <li>Teachers</li>
+                </ul>
+              </div>
+
+              
+              <div>
+                <h3 class="font-raleway font-bold mb-4">Academics</h3>
+                <ul class="space-y-3 text-sm font-outfit">
+                  <li>Special Features</li>
+                  <li>Gallery</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Bottom -->
+            <div
+              class="border-t border-[#262626] mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4"
+            >
+              <div class="flex gap-4 text-sm font-outfit">
+                <span>Terms of Service</span>
+                <span>|</span>
+                <span>Privacy Policy</span>
+                <span>|</span>
+                <span>Cookie Policy</span>
+              </div>
+
+              <div class="flex gap-3">
+                <span
+                  class="w-9 h-9 bg-[#ffddc7] border-2 border-[#262626] rounded-md flex items-center justify-center"
+                  ><img src="/src/assets/icons/facebook.svg" alt=""
+                /></span>
+                <span
+                  class="w-9 h-9 bg-[#ffddc7] border-2 border-[#262626] rounded-md flex items-center justify-center"
+                  ><img src="/src/assets/icons/twitter.svg" alt=""
+                /></span>
+                <span
+                  class="w-9 h-9 bg-[#ffddc7] border-2 border-[#262626] rounded-md flex items-center justify-center"
+                  ><img src="/src/assets/icons/linkedin.svg" alt=""
+                /></span>
+              </div>
+            </div>
+
+            <p class="text-center text-xs font-outfit mt-6">
+              Copyright © [2023] Little Learners Academy. All rights reserved.
+            </p>
+          </div>
+        </footer>
       </body>
     </html>
   </body>
