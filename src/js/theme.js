@@ -1,5 +1,5 @@
 // dark and light mode
-
+export function initThemeToggle (){
 const themeButton = document.querySelector("[data-theme-toggle]");
 const savedTheme = localStorage.getItem("theme")
 
@@ -11,3 +11,4 @@ themeButton?.addEventListener("click", ()=>{
     const isDark = document.documentElement.classList.contains("dark");
     localStorage.setItem("theme",isDark? "dark" : "light");
 });
+}

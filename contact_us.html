@@ -175,54 +175,55 @@
         </a>
       </div>
 
-      <form
+      <form id="contact-form" novalidate
         class="relative z-0 -mt-5 flex flex-col gap-8 rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-5 pb-8 pt-20 shadow-[8px_8px_0_1px_#1e1e1e] sm:px-8 md:gap-10 md:px-12 md:pb-12 md:pt-24 xl:gap-[50px] xl:px-[100px] xl:pb-[100px] xl:pt-[120px]">
         <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:gap-[50px]">
           <label class="flex flex-col gap-3 xl:gap-5">
             <span class="font-outfit text-base font-semibold text-[var(--color-muted)] md:text-lg xl:text-[22px]">Parent
               Name</span>
             <input
-              class="rounded-lg border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-4 font-outfit text-sm font-medium outline-none placeholder:text-[#59595a] md:px-6 md:py-5 xl:px-8 xl:py-7 xl:text-xl"
-              type="text" placeholder="Enter Parent Name" />
+            
+              class="rounded-lg border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-4 font-outfit text-sm font-medium text-[var(--color-text)] outline-none placeholder:text-[var(--color-muted)] md:px-6 md:py-5 xl:px-8 xl:py-7 xl:text-xl"
+              id="parent-name" type="text" name="parentName" placeholder="Enter Parent Name" />
           </label>
 
           <label class="flex flex-col gap-3 xl:gap-5">
             <span class="font-outfit text-base font-semibold text-[var(--color-muted)] md:text-lg xl:text-[22px]">Email
               Address</span>
             <input
-              class="rounded-lg border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-4 font-outfit text-sm font-medium outline-none placeholder:text-[#59595a] md:px-6 md:py-5 xl:px-8 xl:py-7 xl:text-xl"
-              type="email" placeholder="Enter Email Address" />
+              class="rounded-lg border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-4 font-outfit text-sm font-medium text-[var(--color-text)] outline-none placeholder:text-[var(--color-muted)] md:px-6 md:py-5 xl:px-8 xl:py-7 xl:text-xl"
+              type="email" id="email" name="email" placeholder="Enter Email Address" />
           </label>
 
           <label class="flex flex-col gap-3 xl:gap-5">
             <span class="font-outfit text-base font-semibold text-[var(--color-muted)] md:text-lg xl:text-[22px]">Phone
               Number</span>
             <input
-              class="rounded-lg border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-4 font-outfit text-sm font-medium outline-none placeholder:text-[#59595a] md:px-6 md:py-5 xl:px-8 xl:py-7 xl:text-xl"
-              type="tel" placeholder="Enter Phone Number" />
+              class="rounded-lg border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-4 font-outfit text-sm font-medium text-[var(--color-text)] outline-none placeholder:text-[var(--color-muted)] md:px-6 md:py-5 xl:px-8 xl:py-7 xl:text-xl"
+              type="tel" id="phone" name="phone" placeholder="Enter Phone Number" />
           </label>
 
           <label class="flex flex-col gap-3 xl:gap-5">
             <span class="font-outfit text-base font-semibold text-[var(--color-muted)] md:text-lg xl:text-[22px]">Student
               Name</span>
             <input
-              class="rounded-lg border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-4 font-outfit text-sm font-medium outline-none placeholder:text-[#59595a] md:px-6 md:py-5 xl:px-8 xl:py-7 xl:text-xl"
-              type="text" placeholder="Enter Student Name" />
+              class="rounded-lg border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-4 font-outfit text-sm font-medium text-[var(--color-text)] outline-none placeholder:text-[var(--color-muted)] md:px-6 md:py-5 xl:px-8 xl:py-7 xl:text-xl"
+              type="text"  id="student-name" name="studentName"  placeholder="Enter Student Name" />
           </label>
 
           <label class="flex flex-col gap-3 xl:gap-5">
             <span class="font-outfit text-base font-semibold text-[var(--color-muted)] md:text-lg xl:text-[22px]">Student
               Age</span>
             <input
-              class="rounded-lg border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-4 font-outfit text-sm font-medium outline-none placeholder:text-[#59595a] md:px-6 md:py-5 xl:px-8 xl:py-7 xl:text-xl"
-              type="number" min="1" placeholder="Enter Student Age" />
+              class="rounded-lg border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-4 font-outfit text-sm font-medium text-[var(--color-text)] outline-none placeholder:text-[var(--color-muted)] md:px-6 md:py-5 xl:px-8 xl:py-7 xl:text-xl"
+              type="number" id="student-age" name="studentAge"  placeholder="Enter Student Age" />
           </label>
 
           <label class="flex flex-col gap-3 xl:gap-5">
             <span class="font-outfit text-base font-semibold text-[var(--color-muted)] md:text-lg xl:text-[22px]">Program of
               Interest</span>
             <select
-              class="rounded-lg border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-4 font-outfit text-sm font-medium text-[#59595a] outline-none md:px-6 md:py-5 xl:px-8 xl:py-7 xl:text-xl">
+              class="rounded-lg border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-4 font-outfit text-sm font-medium text-[var(--color-text)] outline-none md:px-6 md:py-5 xl:px-8 xl:py-7 xl:text-xl">
               <option>Select Program</option>
               <option>Nursery</option>
               <option>Pre - Kindergartens</option>
@@ -234,8 +235,8 @@
         <label class="flex flex-col gap-3 xl:gap-5">
           <span class="font-outfit text-base font-semibold text-[var(--color-muted)] md:text-lg xl:text-[22px]">Message</span>
           <textarea
-            class="min-h-44 resize-y rounded-lg border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-4 font-outfit text-sm font-medium outline-none placeholder:text-[#59595a] md:min-h-[218px] md:px-6 md:py-5 xl:px-8 xl:py-7 xl:text-xl"
-            placeholder="Enter your Message"></textarea>
+            class="min-h-44 resize-y rounded-lg border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-4 font-outfit text-sm font-medium text-[var(--color-text)] outline-none placeholder:text-[var(--color-muted)] md:min-h-[218px] md:px-6 md:py-5 xl:px-8 xl:py-7 xl:text-xl"
+            placeholder="Enter your Message" id="message"name="message"></textarea>
         </label>
 
         <button
@@ -338,7 +339,7 @@
       </p>
     </div>
   </footer>
-  <script type="module" src="./src/main.js"></script>
+  <script type="module" src="./src/js/main.js"></script>
 
 
 
