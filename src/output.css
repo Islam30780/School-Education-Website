@@ -421,6 +421,9 @@
   .h-\[6px\] {
     height: 6px;
   }
+  .h-auto {
+    height: auto;
+  }
   .h-full {
     height: 100%;
   }
@@ -486,6 +489,9 @@
   }
   .w-\[92\%\] {
     width: 92%;
+  }
+  .w-auto {
+    width: auto;
   }
   .w-fit {
     width: fit-content;
