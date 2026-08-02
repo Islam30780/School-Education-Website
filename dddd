@@ -1,0 +1,25 @@
+ <div class="swiper learning-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide h-auto">
+        
+        </div>
+        <div class="swiper-slide h-auto">
+         
+        </div>
+        <div class="swiper-slide h-auto">
+          
+        </div>
+        <div class="swiper-slide h-auto">
+         
+        </div>
+
+        <div class="swiper-slide h-auto">
+         
+
+        </div>
+        <div class="swiper-slide h-auto">
+          
+        </div>
+        
+
+      </div>

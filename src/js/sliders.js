@@ -4,31 +4,52 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-export function Sliders() {
-  const animatedSlider = document.querySelector(".testimonials-swiper");
+function createSlider(selector, prev, next, pagination) {
+  const slider = document.querySelector(selector);
 
-  if (!animatedSlider) return;
-
-  new Swiper(".testimonials-swiper", {
+  if (!slider) return;
+  new Swiper(selector, {
     modules: [Navigation, Pagination],
     loop: true,
     spaceBetween: 24,
     slidesPerView: 1,
     pagination: {
-      el: ".testimonials-pagination",
+      el: pagination,
       clickable: true,
     },
     navigation: {
-      nextEl: ".testimonials-next",
-      prevEl: ".testimonials-prev",
+      nextEl: next,
+      prevEl: prev,
     },
     breakpoints: {
       768: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
       1024: {
-        slidesPerView: 2,
+        slidesPerView: 3,
       },
     },
   });
+}
+export function Sliders() {
+  createSlider(
+    ".testimonials-swiper",
+    ".testimonials-prev",
+    ".testimonials-next",
+    ".testimonials-pagination"
+  );
+
+  createSlider(
+    ".gallery-swiper",
+    ".gallery-prev",
+    ".gallery-next",
+    ".gallery-pagination"
+  );
+
+  createSlider(
+    ".learning-swiper",
+    ".learning-prev",
+    ".learning-next",
+    ".learning-pagination"
+  );
 }
