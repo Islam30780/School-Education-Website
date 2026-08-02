@@ -12,7 +12,7 @@
     <title>Academics Page</title>
   </head>
 
-  <body>
+  <body class="bg-[var(--color-page)] text-[var(--color-text)]">
     <header class="mx-auto max-w-[1440px] px-4 py-5 md:px-8 lg:px-12">
       <div
         class="mb-4 flex items-center justify-center rounded-[14px] border-2 border-[var(--color-border)] bg-[var(--color-soft)] px-4 py-4 text-center text-sm font-medium shadow-[4px_4px_0_0_#262626] sm:text-lg md:text-xl"
@@ -28,7 +28,9 @@
             href="#"
             class="flex items-center gap-3 bg-[var(--color-primary)] px-6 py-5 lg:border-r-2 border-[var(--color-border)]"
           >
-            <span class="grid h-11 w-11 place-items-center bg-[var(--color-primary)]">
+            <span
+              class="grid h-11 w-11 place-items-center bg-[var(--color-primary)]"
+            >
               <img src="./src/assets/icons/shape-14.png" alt="logo" />
             </span>
 
@@ -63,9 +65,15 @@
             >
             <a
               href="./contact_us.html"
-              class="border-l-2 border-[var(--color-border)] bg-[#ffae80] px-6 py-4 text-lg font-medium hover:bg-[#ff9b64]"
+              class="border-l-2 border-[var(--color-border)] bg-[var(--color-primary)] px-6 py-4 text-lg font-medium hover:bg-[var(--color-accent)]"
               >Contact</a
             >
+            <button
+  data-theme-toggle
+  class="mx-3 my-2 rounded-lg border-2 border-[var(--color-border)] bg-[var(--color-soft)] px-6 py-3 text-lg font-medium hover:bg-[var(--color-accent)]"
+>
+  Theme
+</button>
           </nav>
 
           <div class="lg:hidden">
@@ -285,20 +293,20 @@
           class="inline-flex items-center justify-center rounded-lg border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-2.5 shadow-[3px_3px_0_0_#262626]"
         >
           <p
-            class="font-outfit text-sm font-medium text-[#262626] sm:text-base"
+            class="font-outfit text-sm font-medium text-[var(--color-text)] sm:text-base"
           >
             Our Features
           </p>
         </div>
 
         <h1
-          class="font-raleway text-3xl font-bold text-[#1a1a1a] sm:text-4xl md:text-5xl"
+          class="font-raleway text-3xl font-bold text-[var(--color-text)] sm:text-4xl md:text-5xl"
         >
           What Students Learn
         </h1>
 
         <p
-          class="max-w-3xl font-outfit text-sm font-medium leading-relaxed text-[#333333] sm:text-base md:text-lg"
+          class="max-w-3xl font-outfit text-sm font-medium leading-relaxed text-[var(--color-muted)] sm:text-base md:text-lg"
         >
           At Little Learners Academy, we strive to cultivate a love for learning
           and equip children with essential skills for their future success. Our
@@ -315,7 +323,7 @@
           class="relative mx-auto flex w-full max-w-[380px] flex-col overflow-hidden rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-[5px_5px_0_0_#262626] sm:p-5"
         >
           <div
-            class="absolute left-1/2 top-0 h-36 w-16 -translate-x-1/2 rounded-b-xl border-x-2 border-b-2 border-[var(--color-border)] bg-[#ffe8dc] sm:h-40 sm:w-20"
+            class="absolute left-1/2 top-0 h-36 w-16 -translate-x-1/2 rounded-b-xl border-x-2 border-b-2 border-[var(--color-border)] bg-[var(--color-soft)] sm:h-40 sm:w-20"
           ></div>
           <img
             class="relative z-10 aspect-[4/3] w-full rounded-xl border-2 border-[var(--color-border)] object-cover"
@@ -326,12 +334,12 @@
             class="relative z-10 mt-5 flex flex-col items-center gap-2 text-center sm:mt-6 sm:gap-3"
           >
             <h3
-              class="font-raleway text-lg font-bold leading-snug text-[#1a1a1a] sm:text-2xl"
+              class="font-raleway text-lg font-bold leading-snug text-[var(--color-text)] sm:text-2xl"
             >
               Language Arts
             </h3>
             <p
-              class="max-w-[28ch] font-outfit text-xs font-medium leading-relaxed text-gray-600 sm:text-sm"
+              class="max-w-[28ch] font-outfit text-xs font-medium leading-relaxed text-[var(--color-muted)] sm:text-sm"
             >
               Reading, writing, storytelling, and communication skills.
             </p>
@@ -342,7 +350,7 @@
           class="relative mx-auto flex w-full max-w-[380px] flex-col overflow-hidden rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-[5px_5px_0_0_#262626] sm:p-5"
         >
           <div
-            class="absolute left-1/2 top-0 h-36 w-16 -translate-x-1/2 rounded-b-xl border-x-2 border-b-2 border-[var(--color-border)] bg-[#ffe8dc] sm:h-40 sm:w-20"
+            class="absolute left-1/2 top-0 h-36 w-16 -translate-x-1/2 rounded-b-xl border-x-2 border-b-2 border-[var(--color-border)] bg-[var(--color-soft)] sm:h-40 sm:w-20"
           ></div>
           <img
             class="relative z-10 aspect-[4/3] w-full rounded-xl border-2 border-[var(--color-border)] object-cover"
@@ -353,12 +361,12 @@
             class="relative z-10 mt-5 flex flex-col items-center gap-2 text-center sm:mt-6 sm:gap-3"
           >
             <h3
-              class="font-raleway text-lg font-bold leading-snug text-[#1a1a1a] sm:text-2xl"
+              class="font-raleway text-lg font-bold leading-snug text-[var(--color-text)] sm:text-2xl"
             >
               Mathematics
             </h3>
             <p
-              class="max-w-[28ch] font-outfit text-xs font-medium leading-relaxed text-gray-600 sm:text-sm"
+              class="max-w-[28ch] font-outfit text-xs font-medium leading-relaxed text-[var(--color-muted)] sm:text-sm"
             >
               Number sense, basic operations, problem-solving, and logic.
             </p>
@@ -368,7 +376,7 @@
           class="relative mx-auto flex w-full max-w-[380px] flex-col overflow-hidden rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-[5px_5px_0_0_#262626] sm:p-5"
         >
           <div
-            class="absolute left-1/2 top-0 h-36 w-16 -translate-x-1/2 rounded-b-xl border-x-2 border-b-2 border-[var(--color-border)] bg-[#ffe8dc] sm:h-40 sm:w-20"
+            class="absolute left-1/2 top-0 h-36 w-16 -translate-x-1/2 rounded-b-xl border-x-2 border-b-2 border-[var(--color-border)] bg-[var(--color-soft)] sm:h-40 sm:w-20"
           ></div>
           <img
             class="relative z-10 aspect-[4/3] w-full rounded-xl border-2 border-[var(--color-border)] object-cover"
@@ -379,12 +387,12 @@
             class="relative z-10 mt-5 flex flex-col items-center gap-2 text-center sm:mt-6 sm:gap-3"
           >
             <h3
-              class="font-raleway text-lg font-bold leading-snug text-[#1a1a1a] sm:text-2xl"
+              class="font-raleway text-lg font-bold leading-snug text-[var(--color-text)] sm:text-2xl"
             >
               Science
             </h3>
             <p
-              class="max-w-[28ch] font-outfit text-xs font-medium leading-relaxed text-gray-600 sm:text-sm"
+              class="max-w-[28ch] font-outfit text-xs font-medium leading-relaxed text-[var(--color-muted)] sm:text-sm"
             >
               Exploring the natural world through hands-on experiments and
               investigations.
@@ -396,7 +404,7 @@
           class="relative mx-auto flex w-full max-w-[380px] flex-col overflow-hidden rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-[5px_5px_0_0_#262626] sm:p-5"
         >
           <div
-            class="absolute left-1/2 top-0 h-36 w-16 -translate-x-1/2 rounded-b-xl border-x-2 border-b-2 border-[var(--color-border)] bg-[#ffe8dc] sm:h-40 sm:w-20"
+            class="absolute left-1/2 top-0 h-36 w-16 -translate-x-1/2 rounded-b-xl border-x-2 border-b-2 border-[var(--color-border)] bg-[var(--color-soft)] sm:h-40 sm:w-20"
           ></div>
           <img
             class="relative z-10 aspect-[4/3] w-full rounded-xl border-2 border-[var(--color-border)] object-cover"
@@ -407,12 +415,12 @@
             class="relative z-10 mt-5 flex flex-col items-center gap-2 text-center sm:mt-6 sm:gap-3"
           >
             <h3
-              class="font-raleway text-lg font-bold leading-snug text-[#1a1a1a] sm:text-2xl"
+              class="font-raleway text-lg font-bold leading-snug text-[var(--color-text)] sm:text-2xl"
             >
               Social Studies
             </h3>
             <p
-              class="max-w-[28ch] font-outfit text-xs font-medium leading-relaxed text-gray-600 sm:text-sm"
+              class="max-w-[28ch] font-outfit text-xs font-medium leading-relaxed text-[var(--color-muted)] sm:text-sm"
             >
               Cultivating an understanding of diverse cultures and communities.
             </p>
@@ -423,7 +431,7 @@
           class="relative mx-auto flex w-full max-w-[380px] flex-col overflow-hidden rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-[5px_5px_0_0_#262626] sm:p-5"
         >
           <div
-            class="absolute left-1/2 top-0 h-36 w-16 -translate-x-1/2 rounded-b-xl border-x-2 border-b-2 border-[var(--color-border)] bg-[#ffe8dc] sm:h-40 sm:w-20"
+            class="absolute left-1/2 top-0 h-36 w-16 -translate-x-1/2 rounded-b-xl border-x-2 border-b-2 border-[var(--color-border)] bg-[var(--color-soft)] sm:h-40 sm:w-20"
           ></div>
           <img
             class="relative z-10 aspect-[4/3] w-full rounded-xl border-2 border-[var(--color-border)] object-cover"
@@ -434,12 +442,12 @@
             class="relative z-10 mt-5 flex flex-col items-center gap-2 text-center sm:mt-6 sm:gap-3"
           >
             <h3
-              class="font-raleway text-lg font-bold leading-snug text-[#1a1a1a] sm:text-2xl"
+              class="font-raleway text-lg font-bold leading-snug text-[var(--color-text)] sm:text-2xl"
             >
               Arts and Crafts
             </h3>
             <p
-              class="max-w-[28ch] font-outfit text-xs font-medium leading-relaxed text-gray-600 sm:text-sm"
+              class="max-w-[28ch] font-outfit text-xs font-medium leading-relaxed text-[var(--color-muted)] sm:text-sm"
             >
               Encouraging creativity through various art forms and crafts.
             </p>
@@ -450,7 +458,7 @@
           class="relative mx-auto flex w-full max-w-[380px] flex-col overflow-hidden rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-[5px_5px_0_0_#262626] sm:p-5"
         >
           <div
-            class="absolute left-1/2 top-0 h-36 w-16 -translate-x-1/2 rounded-b-xl border-x-2 border-b-2 border-[var(--color-border)] bg-[#ffe8dc] sm:h-40 sm:w-20"
+            class="absolute left-1/2 top-0 h-36 w-16 -translate-x-1/2 rounded-b-xl border-x-2 border-b-2 border-[var(--color-border)] bg-[var(--color-soft)] sm:h-40 sm:w-20"
           ></div>
           <img
             class="relative z-10 aspect-[4/3] w-full rounded-xl border-2 border-[var(--color-border)] object-cover"
@@ -461,12 +469,12 @@
             class="relative z-10 mt-5 flex flex-col items-center gap-2 text-center sm:mt-6 sm:gap-3"
           >
             <h3
-              class="font-raleway text-lg font-bold leading-snug text-[#1a1a1a] sm:text-2xl"
+              class="font-raleway text-lg font-bold leading-snug text-[var(--color-text)] sm:text-2xl"
             >
               Physical Education
             </h3>
             <p
-              class="max-w-[28ch] font-outfit text-xs font-medium leading-relaxed text-gray-600 sm:text-sm"
+              class="max-w-[28ch] font-outfit text-xs font-medium leading-relaxed text-[var(--color-muted)] sm:text-sm"
             >
               Promoting physical fitness, coordination, and teamwork.
             </p>
@@ -484,20 +492,20 @@
           class="inline-flex items-center justify-center rounded-lg border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2 shadow-[3px_3px_0_0_#262626] md:px-5 md:py-2.5"
         >
           <p
-            class="font-outfit text-sm font-medium text-[#262626] md:text-base"
+            class="font-outfit text-sm font-medium text-[var(--color-text)] md:text-base"
           >
             Our Gallery
           </p>
         </div>
 
         <h2
-          class="font-raleway text-3xl font-bold text-[#1a1a1a] md:text-4xl lg:text-5xl"
+          class="font-raleway text-3xl font-bold text-[var(--color-text)] md:text-4xl lg:text-5xl"
         >
           Our Rooms Gallery
         </h2>
 
         <p
-          class="max-w-4xl font-outfit text-sm font-medium leading-relaxed text-[#333333] md:text-base lg:text-lg"
+          class="max-w-4xl font-outfit text-sm font-medium leading-relaxed text-[var(--color-muted)] md:text-base lg:text-lg"
         >
           Step into our Gallery and immerse yourself in a visual journey of
           cherished moments and unforgettable experiences at our kindergarten
@@ -509,32 +517,32 @@
         class="mt-10 flex flex-wrap justify-center gap-2.5 md:mt-12 md:gap-3.5"
       >
         <button
-          class="rounded-md border-2 border-[var(--color-border)] bg-[#ffe8dc] px-4 py-2.5 font-outfit text-sm font-semibold text-[#1a1a1a] md:rounded-lg md:px-5 md:py-3.5 md:text-base lg:text-lg"
+          class="rounded-md border-2 border-[var(--color-border)] bg-[var(--color-soft)] px-4 py-2.5 font-outfit text-sm font-semibold text-[var(--color-text)] md:rounded-lg md:px-5 md:py-3.5 md:text-base lg:text-lg"
         >
           All
         </button>
         <button
-          class="rounded-md border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2.5 font-outfit text-sm font-semibold text-[#1a1a1a] md:rounded-lg md:px-5 md:py-3.5 md:text-base lg:text-lg"
+          class="rounded-md border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2.5 font-outfit text-sm font-semibold text-[var(--color-text)] md:rounded-lg md:px-5 md:py-3.5 md:text-base lg:text-lg"
         >
           Classrooms
         </button>
         <button
-          class="rounded-md border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2.5 font-outfit text-sm font-semibold text-[#1a1a1a] md:rounded-lg md:px-5 md:py-3.5 md:text-base lg:text-lg"
+          class="rounded-md border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2.5 font-outfit text-sm font-semibold text-[var(--color-text)] md:rounded-lg md:px-5 md:py-3.5 md:text-base lg:text-lg"
         >
           Library
         </button>
         <button
-          class="rounded-md border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2.5 font-outfit text-sm font-semibold text-[#1a1a1a] md:rounded-lg md:px-5 md:py-3.5 md:text-base lg:text-lg"
+          class="rounded-md border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2.5 font-outfit text-sm font-semibold text-[var(--color-text)] md:rounded-lg md:px-5 md:py-3.5 md:text-base lg:text-lg"
         >
           Science Lab
         </button>
         <button
-          class="rounded-md border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2.5 font-outfit text-sm font-semibold text-[#1a1a1a] md:rounded-lg md:px-5 md:py-3.5 md:text-base lg:text-lg"
+          class="rounded-md border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2.5 font-outfit text-sm font-semibold text-[var(--color-text)] md:rounded-lg md:px-5 md:py-3.5 md:text-base lg:text-lg"
         >
           Computer Lab
         </button>
         <button
-          class="rounded-md border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2.5 font-outfit text-sm font-semibold text-[#1a1a1a] md:rounded-lg md:px-5 md:py-3.5 md:text-base lg:text-lg"
+          class="rounded-md border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2.5 font-outfit text-sm font-semibold text-[var(--color-text)] md:rounded-lg md:px-5 md:py-3.5 md:text-base lg:text-lg"
         >
           Garden and Nature Area
         </button>
@@ -542,111 +550,111 @@
 
       <div class="mt-12 hidden flex-col gap-16 md:flex">
         <!-- Mobile Card -->
-<article class="mt-8 block md:hidden">
-  <div
-    class="relative rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-5 pb-7 pt-5 shadow-[5px_5px_0_0_#1e1e1e]"
-  >
-  <img
-        class="h-72 w-full rounded-xl border-2 border-[var(--color-border)] object-cover"
-        src="./src/assets/icons/Image (3).png"
-        alt="Classroom 1"
-      />
-
-    <div class="mt-6 flex items-center justify-center gap-4">
-      <button
-        class="grid h-9 w-9 place-items-center rounded-md border-2 border-[var(--color-border)] bg-[var(--color-surface)] text-base font-bold"
-      >
-        &#8592;
-      </button>
-
-      <button
-        class="grid h-9 w-9 place-items-center rounded-md border-2 border-[var(--color-border)] bg-[var(--color-surface)] text-base font-bold"
-      >
-        &#8594;
-      </button>
-    </div>
-
-    <h3
-      class="mt-4 text-center font-raleway text-xl font-bold text-[#1a1a1a]"
-    >
-      Classrooms
-    </h3>
-
-    <p
-      class="mx-auto mt-4 max-w-xs text-center font-outfit text-sm font-medium leading-6 text-gray-600"
-    >
-      Our well-equipped classrooms are designed to provide a nurturing and
-      stimulating learning environment. Each classroom is thoughtfully arranged
-      to inspire creativity, curiosity, and engagement.
-    </p>
-  </div>
-</article>
-
-
-<div class="mt-12 hidden flex-col gap-16 md:flex">
-  <article class="flex flex-col gap-0">
-    <div class="grid grid-cols-4 gap-6 px-8 xl:px-12">
-      <img
-        class="h-72 w-full rounded-xl border-2 border-[var(--color-border)] object-cover"
-        src="./src/assets/icons/Image (3).png"
-        alt="Classroom 1"
-      />
-
-      <img
-        class="h-72 w-full rounded-xl border-2 border-[var(--color-border)] object-cover"
-        src="./src/assets/icons/Image (4).png"
-        alt="Classroom 2"
-      />
-
-      <img
-        class="h-72 w-full rounded-xl border-2 border-[var(--color-border)] object-cover"
-        src="./src/assets/icons/Image (5).png"
-        alt="Classroom 3"
-      />
-
-      <img
-        class="h-72 w-full rounded-xl border-2 border-[var(--color-border)] object-cover"
-        src="./src/assets/icons/Image (6).png"
-        alt="Classroom 4"
-      />
-    </div>
-
-    <div
-      class="rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-8 pb-10 pt-10 shadow-[6px_6px_0_2px_#1e1e1e] xl:px-12"
-    >
-      <div class="flex items-end justify-between gap-8">
-        <h3
-          class="font-raleway text-3xl font-bold text-[#1a1a1a] xl:text-4xl"
-        >
-          Classrooms
-        </h3>
-
-        <div class="flex items-center gap-4">
-          <button
-            class="grid h-12 w-12 place-items-center rounded-lg border-2 border-[var(--color-border)] bg-[var(--color-surface)] text-lg font-bold"
+        <article class="mt-8 block md:hidden">
+          <div
+            class="relative rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-5 pb-7 pt-5 shadow-[5px_5px_0_0_#1e1e1e]"
           >
-            &#8592;
-          </button>
+            <img
+              class="h-72 w-full rounded-xl border-2 border-[var(--color-border)] object-cover"
+              src="./src/assets/icons/Image (3).png"
+              alt="Classroom 1"
+            />
 
-          <button
-            class="grid h-12 w-12 place-items-center rounded-lg border-2 border-[var(--color-border)] bg-[var(--color-surface)] text-lg font-bold"
-          >
-            &#8594;
-          </button>
+            <div class="mt-6 flex items-center justify-center gap-4">
+              <button
+                class="grid h-9 w-9 place-items-center rounded-md border-2 border-[var(--color-border)] bg-[var(--color-surface)] text-base font-bold"
+              >
+                &#8592;
+              </button>
+
+              <button
+                class="grid h-9 w-9 place-items-center rounded-md border-2 border-[var(--color-border)] bg-[var(--color-surface)] text-base font-bold"
+              >
+                &#8594;
+              </button>
+            </div>
+
+            <h3
+              class="mt-4 text-center font-raleway text-xl font-bold text-[var(--color-text)]"
+            >
+              Classrooms
+            </h3>
+
+            <p
+              class="mx-auto mt-4 max-w-xs text-center font-outfit text-sm font-medium leading-6 text-[var(--color-muted)]"
+            >
+              Our well-equipped classrooms are designed to provide a nurturing
+              and stimulating learning environment. Each classroom is
+              thoughtfully arranged to inspire creativity, curiosity, and
+              engagement.
+            </p>
+          </div>
+        </article>
+
+        <div class="mt-12 hidden flex-col gap-16 md:flex">
+          <article class="flex flex-col gap-0">
+            <div class="grid grid-cols-4 gap-6 px-8 xl:px-12">
+              <img
+                class="h-72 w-full rounded-xl border-2 border-[var(--color-border)] object-cover"
+                src="./src/assets/icons/Image (3).png"
+                alt="Classroom 1"
+              />
+
+              <img
+                class="h-72 w-full rounded-xl border-2 border-[var(--color-border)] object-cover"
+                src="./src/assets/icons/Image (4).png"
+                alt="Classroom 2"
+              />
+
+              <img
+                class="h-72 w-full rounded-xl border-2 border-[var(--color-border)] object-cover"
+                src="./src/assets/icons/Image (5).png"
+                alt="Classroom 3"
+              />
+
+              <img
+                class="h-72 w-full rounded-xl border-2 border-[var(--color-border)] object-cover"
+                src="./src/assets/icons/Image (6).png"
+                alt="Classroom 4"
+              />
+            </div>
+
+            <div
+              class="rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-8 pb-10 pt-10 shadow-[6px_6px_0_2px_#1e1e1e] xl:px-12"
+            >
+              <div class="flex items-end justify-between gap-8">
+                <h3
+                  class="font-raleway text-3xl font-bold text-[var(--color-text)] xl:text-4xl"
+                >
+                  Classrooms
+                </h3>
+
+                <div class="flex items-center gap-4">
+                  <button
+                    class="grid h-12 w-12 place-items-center rounded-lg border-2 border-[var(--color-border)] bg-[var(--color-surface)] text-lg font-bold"
+                  >
+                    &#8592;
+                  </button>
+
+                  <button
+                    class="grid h-12 w-12 place-items-center rounded-lg border-2 border-[var(--color-border)] bg-[var(--color-surface)] text-lg font-bold"
+                  >
+                    &#8594;
+                  </button>
+                </div>
+              </div>
+
+              <p
+                class="mt-6 max-w-6xl font-outfit text-lg font-medium leading-8 text-[var(--color-muted)]"
+              >
+                Our well-equipped classrooms are designed to provide a nurturing
+                and stimulating learning environment. Each classroom is
+                thoughtfully arranged to inspire creativity, curiosity, and
+                engagement.
+              </p>
+            </div>
+          </article>
         </div>
-      </div>
-
-      <p
-        class="mt-6 max-w-6xl font-outfit text-lg font-medium leading-8 text-gray-600"
-      >
-        Our well-equipped classrooms are designed to provide a nurturing and
-        stimulating learning environment. Each classroom is thoughtfully arranged
-        to inspire creativity, curiosity, and engagement.
-      </p>
-    </div>
-  </article>
-</div>
-
 
         <article class="flex flex-col gap-0">
           <div class="grid grid-cols-4 gap-6 px-8 xl:px-12">
@@ -676,7 +684,7 @@
           >
             <div class="flex items-end justify-between gap-8">
               <h3
-                class="font-raleway text-3xl font-bold text-[#1a1a1a] xl:text-4xl"
+                class="font-raleway text-3xl font-bold text-[var(--color-text)] xl:text-4xl"
               >
                 Library
               </h3>
@@ -694,7 +702,7 @@
               </div>
             </div>
             <p
-              class="mt-6 max-w-6xl font-outfit text-lg font-medium leading-8 text-gray-600"
+              class="mt-6 max-w-6xl font-outfit text-lg font-medium leading-8 text-[var(--color-muted)]"
             >
               Our expansive library is a treasure trove of books, fostering a
               love for reading and supporting students' literacy development.
@@ -730,7 +738,7 @@
           >
             <div class="flex items-end justify-between gap-8">
               <h3
-                class="font-raleway text-3xl font-bold text-[#1a1a1a] xl:text-4xl"
+                class="font-raleway text-3xl font-bold text-[var(--color-text)] xl:text-4xl"
               >
                 Science Lab
               </h3>
@@ -748,7 +756,7 @@
               </div>
             </div>
             <p
-              class="mt-6 max-w-6xl font-outfit text-lg font-medium leading-8 text-gray-600"
+              class="mt-6 max-w-6xl font-outfit text-lg font-medium leading-8 text-[var(--color-muted)]"
             >
               Our hands-on science lab allows students to conduct experiments
               and explore scientific concepts in a fun and interactive way.
@@ -784,7 +792,7 @@
           >
             <div class="flex items-end justify-between gap-8">
               <h3
-                class="font-raleway text-3xl font-bold text-[#1a1a1a] xl:text-4xl"
+                class="font-raleway text-3xl font-bold text-[var(--color-text)] xl:text-4xl"
               >
                 Computer Lab
               </h3>
@@ -802,7 +810,7 @@
               </div>
             </div>
             <p
-              class="mt-6 max-w-6xl font-outfit text-lg font-medium leading-8 text-gray-600"
+              class="mt-6 max-w-6xl font-outfit text-lg font-medium leading-8 text-[var(--color-muted)]"
             >
               Equipped with age-appropriate technology, the computer lab
               enhances students' digital literacy and computational skills.
@@ -819,7 +827,7 @@
             />
             <img
               class="h-72 w-full rounded-xl border-2 border-[var(--color-border)] object-cover"
-               src="./src/assets/icons/Image (19).png"
+              src="./src/assets/icons/Image (19).png"
               alt="Garden 2"
             />
             <img
@@ -838,7 +846,7 @@
           >
             <div class="flex items-end justify-between gap-8">
               <h3
-                class="font-raleway text-3xl font-bold text-[#1a1a1a] xl:text-4xl"
+                class="font-raleway text-3xl font-bold text-[var(--color-text)] xl:text-4xl"
               >
                 Garden and Nature Area
               </h3>
@@ -856,7 +864,7 @@
               </div>
             </div>
             <p
-              class="mt-6 max-w-6xl font-outfit text-lg font-medium leading-8 text-gray-600"
+              class="mt-6 max-w-6xl font-outfit text-lg font-medium leading-8 text-[var(--color-muted)]"
             >
               Our garden and nature area offer an opportunity for children to
               connect with nature and learn about plants and the environment.
@@ -891,13 +899,13 @@
                 </button>
               </div>
               <h3
-                class="text-center font-raleway text-2xl font-bold text-[#1a1a1a]"
+                class="text-center font-raleway text-2xl font-bold text-[var(--color-text)]"
               >
                 Classrooms
               </h3>
             </div>
             <p
-              class="mt-5 text-center font-outfit text-base font-medium leading-7 text-gray-600"
+              class="mt-5 text-center font-outfit text-base font-medium leading-7 text-[var(--color-muted)]"
             >
               Our well-equipped classrooms are designed to provide a nurturing
               and stimulating learning environment. Each classroom is
@@ -932,13 +940,13 @@
                 </button>
               </div>
               <h3
-                class="text-center font-raleway text-2xl font-bold text-[#1a1a1a]"
+                class="text-center font-raleway text-2xl font-bold text-[var(--color-text)]"
               >
                 Library
               </h3>
             </div>
             <p
-              class="mt-5 text-center font-outfit text-base font-medium leading-7 text-gray-600"
+              class="mt-5 text-center font-outfit text-base font-medium leading-7 text-[var(--color-muted)]"
             >
               Our expansive library is a treasure trove of books, fostering a
               love for reading and supporting students' literacy development.
@@ -971,13 +979,13 @@
                 </button>
               </div>
               <h3
-                class="text-center font-raleway text-2xl font-bold text-[#1a1a1a]"
+                class="text-center font-raleway text-2xl font-bold text-[var(--color-text)]"
               >
                 Science Lab
               </h3>
             </div>
             <p
-              class="mt-5 text-center font-outfit text-base font-medium leading-7 text-gray-600"
+              class="mt-5 text-center font-outfit text-base font-medium leading-7 text-[var(--color-muted)]"
             >
               Our hands-on science lab allows students to conduct experiments
               and explore scientific concepts in a fun and interactive way.
@@ -1009,13 +1017,13 @@
                 </button>
               </div>
               <h3
-                class="text-center font-raleway text-2xl font-bold text-[#1a1a1a]"
+                class="text-center font-raleway text-2xl font-bold text-[var(--color-text)]"
               >
                 Computer Lab
               </h3>
             </div>
             <p
-              class="mt-5 text-center font-outfit text-base font-medium leading-7 text-gray-600"
+              class="mt-5 text-center font-outfit text-base font-medium leading-7 text-[var(--color-muted)]"
             >
               Equipped with age-appropriate technology, the computer lab
               enhances students' digital literacy and computational skills.
@@ -1048,13 +1056,13 @@
                 </button>
               </div>
               <h3
-                class="text-center font-raleway text-2xl font-bold text-[#1a1a1a]"
+                class="text-center font-raleway text-2xl font-bold text-[var(--color-text)]"
               >
                 Garden and Nature Area
               </h3>
             </div>
             <p
-              class="mt-5 text-center font-outfit text-base font-medium leading-7 text-gray-600"
+              class="mt-5 text-center font-outfit text-base font-medium leading-7 text-[var(--color-muted)]"
             >
               Our garden and nature area offer an opportunity for children to
               connect with nature and learn about plants and the environment.
@@ -1064,95 +1072,105 @@
       </div>
     </section>
     <footer class="container mx-auto xl:px-40 py-12">
-    <div class="bg-[var(--color-surface)] border-2 border-[var(--color-border)] rounded-xl p-10 shadow-[6px_6px_0_0_#262626]">
+      <div
+        class="bg-[var(--color-surface)] border-2 border-[var(--color-border)] rounded-xl p-10 shadow-[6px_6px_0_0_#262626]"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+          <div class="lg:col-span-2">
+            <div class="flex items-center gap-2 mb-4">
+              <img
+                src="./src/assets/icons//logo 2.svg"
+                alt=""
+                class="w-8 h-8"
+              />
+              <h2 class="font-raleway font-bold">Little Learners</h2>
+            </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+            <p class="font-outfit text-sm max-w-sm mb-6">
+              We believe in the power of play to foster creativity,
+              problem-solving skills, and imagination.
+            </p>
 
-        <div class="lg:col-span-2">
-          <div class="flex items-center gap-2 mb-4">
-            <img src="./src/assets/icons//logo 2.svg" alt="" class="w-8 h-8" />
-            <h2 class="font-raleway font-bold">Little Learners</h2>
+            <div class="space-y-3 text-sm font-outfit">
+              <div class="flex items-center gap-2">
+                <img src="./src/assets/icons/email.svg" alt="" />
+                <p>hello@littlelearners.com</p>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <img src="./src/assets/icons/phone.svg" alt="" />
+                <p>+91 91813 23 2309</p>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <img src="./src/assets/icons/location.svg" alt="" />
+                <p>Somewhere in the World</p>
+              </div>
+            </div>
           </div>
 
-          <p class="font-outfit text-sm max-w-sm mb-6">
-            We believe in the power of play to foster creativity,
-            problem-solving skills, and imagination.
-          </p>
+          <div>
+            <h3 class="font-raleway font-bold mb-4">Home</h3>
+            <ul class="space-y-3 text-sm font-outfit">
+              <li>Features</li>
+              <li>Our Testimonials</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
 
-          <div class="space-y-3 text-sm font-outfit">
-            <div class="flex items-center gap-2">
-              <img src="./src/assets/icons/email.svg" alt="" />
-              <p>hello@littlelearners.com</p>
-            </div>
+          <div>
+            <h3 class="font-raleway font-bold mb-4">About Us</h3>
+            <ul class="space-y-3 text-sm font-outfit">
+              <li>Our Mission</li>
+              <li>Our Vision</li>
+              <li>Awards and Recognitions</li>
+              <li>History</li>
+              <li>Teachers</li>
+            </ul>
+          </div>
 
-            <div class="flex items-center gap-2">
-              <img src="./src/assets/icons/phone.svg" alt="" />
-              <p>+91 91813 23 2309</p>
-            </div>
-
-            <div class="flex items-center gap-2">
-              <img src="./src/assets/icons/location.svg" alt="" />
-              <p>Somewhere in the World</p>
-            </div>
+          <div>
+            <h3 class="font-raleway font-bold mb-4">Academics</h3>
+            <ul class="space-y-3 text-sm font-outfit">
+              <li>Special Features</li>
+              <li>Gallery</li>
+            </ul>
           </div>
         </div>
 
+        <!-- Bottom -->
+        <div
+          class="border-t border-[var(--color-border)] mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+          <div class="flex gap-4 text-sm font-outfit">
+            <span>Terms of Service</span>
+            <span>|</span>
+            <span>Privacy Policy</span>
+            <span>|</span>
+            <span>Cookie Policy</span>
+          </div>
 
-        <div>
-          <h3 class="font-raleway font-bold mb-4">Home</h3>
-          <ul class="space-y-3 text-sm font-outfit">
-            <li>Features</li>
-            <li>Our Testimonials</li>
-            <li>FAQ</li>
-          </ul>
+          <div class="flex gap-3">
+            <span
+              class="w-9 h-9 bg-[var(--color-accent)] border-2 border-[var(--color-border)] rounded-md flex items-center justify-center"
+              ><img src="./src/assets/icons/facebook.svg" alt=""
+            /></span>
+            <span
+              class="w-9 h-9 bg-[var(--color-accent)] border-2 border-[var(--color-border)] rounded-md flex items-center justify-center"
+              ><img src="./src/assets/icons/twitter.svg" alt=""
+            /></span>
+            <span
+              class="w-9 h-9 bg-[var(--color-accent)] border-2 border-[var(--color-border)] rounded-md flex items-center justify-center"
+              ><img src="./src/assets/icons/linkedin.svg" alt=""
+            /></span>
+          </div>
         </div>
 
-
-        <div>
-          <h3 class="font-raleway font-bold mb-4">About Us</h3>
-          <ul class="space-y-3 text-sm font-outfit">
-            <li>Our Mission</li>
-            <li>Our Vision</li>
-            <li>Awards and Recognitions</li>
-            <li>History</li>
-            <li>Teachers</li>
-          </ul>
-        </div>
-
-
-        <div>
-          <h3 class="font-raleway font-bold mb-4">Academics</h3>
-          <ul class="space-y-3 text-sm font-outfit">
-            <li>Special Features</li>
-            <li>Gallery</li>
-          </ul>
-        </div>
+        <p class="text-center text-xs font-outfit mt-6">
+          Copyright © [2023] Little Learners Academy. All rights reserved.
+        </p>
       </div>
-
-      <!-- Bottom -->
-      <div class="border-t border-[var(--color-border)] mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="flex gap-4 text-sm font-outfit">
-          <span>Terms of Service</span>
-          <span>|</span>
-          <span>Privacy Policy</span>
-          <span>|</span>
-          <span>Cookie Policy</span>
-        </div>
-
-        <div class="flex gap-3">
-          <span class="w-9 h-9 bg-[var(--color-accent)] border-2 border-[var(--color-border)] rounded-md flex items-center justify-center"><img
-              src="./src/assets/icons/facebook.svg" alt="" /></span>
-          <span class="w-9 h-9 bg-[var(--color-accent)] border-2 border-[var(--color-border)] rounded-md flex items-center justify-center"><img
-              src="./src/assets/icons/twitter.svg" alt="" /></span>
-          <span class="w-9 h-9 bg-[var(--color-accent)] border-2 border-[var(--color-border)] rounded-md flex items-center justify-center"><img
-              src="./src/assets/icons/linkedin.svg" alt="" /></span>
-        </div>
-      </div>
-
-      <p class="text-center text-xs font-outfit mt-6">
-        Copyright © [2023] Little Learners Academy. All rights reserved.
-      </p>
-    </div>
-  </footer>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
