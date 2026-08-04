@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 
 <body lang="en">
 
@@ -54,9 +54,20 @@
           </nav>
 
           <div class="lg:hidden">
-            <button class="px-6 py-5 text-3xl font-bold">☰</button>
+            <button data-menu-toggle aria-label="Open menu" aria-expanded="false" type="button" class="px-6 py-5 text-3xl font-bold">☰</button>
           </div>
         </div>
+          <nav
+            data-mobile-menu
+            class="hidden border-t-2 border-[var(--color-border)] bg-[var(--color-surface)] lg:hidden"
+          >
+            <a href="./index.html" class="block border-b-2 border-[var(--color-border)] px-6 py-4 font-medium hover:bg-[var(--color-soft)]">Home</a>
+            <a href="./About_Page.html" class="block border-b-2 border-[var(--color-border)] px-6 py-4 font-medium hover:bg-[var(--color-soft)]">About Us</a>
+            <a href="./Academics Page.html" class="block border-b-2 border-[var(--color-border)] px-6 py-4 font-medium hover:bg-[var(--color-soft)]">Academics</a>
+            <a href="./Admission_page.html" class="block border-b-2 border-[var(--color-border)] px-6 py-4 font-medium hover:bg-[var(--color-soft)]">Admissions</a>
+            <a href="./Student Life Page.html" class="block border-b-2 border-[var(--color-border)] px-6 py-4 font-medium hover:bg-[var(--color-soft)]">Student Life</a>
+            <a href="./contact_us.html" class="block px-6 py-4 font-medium hover:bg-[var(--color-soft)]">Contact</a>
+          </nav>
       </div>
     </header>
   </body>
@@ -335,7 +346,7 @@
       </div>
 
       <p class="text-center text-xs font-outfit mt-6">
-        Copyright © [2023] Little Learners Academy. All rights reserved.
+        Copyright Â© [2023] Little Learners Academy. All rights reserved.
       </p>
     </div>
   </footer>
@@ -344,3 +355,5 @@
 
 
 </html>
+
+

@@ -6,6 +6,6 @@ export function initAnimations() {
     duration: 700,
     easing: "ease-out",
     once: true,
-    offset: 80,
+    offset: 0,
   });
 }

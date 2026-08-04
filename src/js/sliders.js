@@ -31,6 +31,24 @@ function createSlider(selector, prev, next, pagination) {
     },
   });
 }
+function createGallerySlider(){
+  const slider = document.querySelector(".gallery-swiper");
+   new Swiper(".gallery-swiper", {
+    modules: [Navigation, Pagination],
+    loop: true,
+    spaceBetween: 24,
+    slidesPerView: 1,
+    pagination: {
+      el: ".gallery-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".gallery-next",
+      prevEl: ".gallery-prev",
+    },
+  });
+}
+
 export function Sliders() {
   createSlider(
     ".testimonials-swiper",
@@ -52,4 +70,5 @@ export function Sliders() {
     ".learning-next",
     ".learning-pagination"
   );
+  createGallerySlider();
 }

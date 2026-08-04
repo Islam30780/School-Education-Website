@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -49,9 +49,20 @@
         </nav>
 
         <div class="lg:hidden">
-          <button class="px-6 py-5 text-3xl font-bold">☰</button>
+          <button data-menu-toggle aria-label="Open menu" aria-expanded="false" type="button" class="px-6 py-5 text-3xl font-bold">☰</button>
         </div>
       </div>
+          <nav
+            data-mobile-menu
+            class="hidden border-t-2 border-[var(--color-border)] bg-[var(--color-surface)] lg:hidden"
+          >
+            <a href="./index.html" class="block border-b-2 border-[var(--color-border)] px-6 py-4 font-medium hover:bg-[var(--color-soft)]">Home</a>
+            <a href="./About_Page.html" class="block border-b-2 border-[var(--color-border)] px-6 py-4 font-medium hover:bg-[var(--color-soft)]">About Us</a>
+            <a href="./Academics Page.html" class="block border-b-2 border-[var(--color-border)] px-6 py-4 font-medium hover:bg-[var(--color-soft)]">Academics</a>
+            <a href="./Admission_page.html" class="block border-b-2 border-[var(--color-border)] px-6 py-4 font-medium hover:bg-[var(--color-soft)]">Admissions</a>
+            <a href="./Student Life Page.html" class="block border-b-2 border-[var(--color-border)] px-6 py-4 font-medium hover:bg-[var(--color-soft)]">Student Life</a>
+            <a href="./contact_us.html" class="block px-6 py-4 font-medium hover:bg-[var(--color-soft)]">Contact</a>
+          </nav>
     </div>
   </header>
   <section class="container mx-auto px-4 xl:px-40 py-16">
@@ -98,9 +109,11 @@
 
     <div class="mt-14 grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 xl:mt-20 xl:grid-cols-3 xl:gap-x-12 xl:gap-y-20">
       <article class="flex flex-col">
-        <div class="flex flex-col items-start">
+        <div 
+        class="flex flex-col items-start">
           <div class="rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-6 py-3 shadow-[6px_6px_0_2px_#1e1e1e]">
-            <span class="font-raleway text-4xl font-extrabold leading-none text-[var(--color-text)] md:text-5xl xl:text-[60px]">
+            <span data-aos="zoom-in-down"
+             class="font-raleway text-4xl font-extrabold leading-none text-[var(--color-text)] md:text-5xl xl:text-[60px]">
               01
             </span>
           </div>
@@ -114,7 +127,8 @@
 
         <div
           class="flex min-h-[230px] flex-col gap-4 rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] p-7 shadow-[6px_6px_0_2px_#1e1e1e] sm:p-8 xl:p-12">
-          <h2 class="font-raleway text-2xl font-bold leading-tight text-[var(--color-text)] md:text-3xl xl:text-[40px]">
+          <h2 data-aos="zoom-in-down"
+          class="font-raleway text-2xl font-bold leading-tight text-[var(--color-text)] md:text-3xl xl:text-[40px]">
             Inquiry
           </h2>
           <p class="font-outfit text-sm font-medium leading-relaxed text-[var(--color-muted)] md:text-base xl:text-xl">
@@ -128,7 +142,8 @@
       <article class="flex flex-col">
         <div class="flex flex-col items-start">
           <div class="rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-6 py-3 shadow-[6px_6px_0_2px_#1e1e1e]">
-            <span class="font-raleway text-4xl font-extrabold leading-none text-[var(--color-text)] md:text-5xl xl:text-[60px]">
+            <span data-aos="zoom-in-down"
+            class="font-raleway text-4xl font-extrabold leading-none text-[var(--color-text)] md:text-5xl xl:text-[60px]">
               02
             </span>
           </div>
@@ -142,7 +157,8 @@
 
         <div
           class="flex min-h-[230px] flex-col gap-4 rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] p-7 shadow-[6px_6px_0_2px_#1e1e1e] sm:p-8 xl:p-12">
-          <h2 class="font-raleway text-2xl font-bold leading-tight text-[var(--color-text)] md:text-3xl xl:text-[40px]">
+          <h2 data-aos="zoom-in-down"
+          class="font-raleway text-2xl font-bold leading-tight text-[var(--color-text)] md:text-3xl xl:text-[40px]">
             School Tour
           </h2>
           <p class="font-outfit text-sm font-medium leading-relaxed text-[var(--color-muted)] md:text-base xl:text-xl">
@@ -156,7 +172,7 @@
       <article class="flex flex-col">
         <div class="flex flex-col items-start">
           <div class="rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-6 py-3 shadow-[6px_6px_0_2px_#1e1e1e]">
-            <span class="font-raleway text-4xl font-extrabold leading-none text-[var(--color-text)] md:text-5xl xl:text-[60px]">
+            <span data-aos="zoom-in-down" class="font-raleway text-4xl font-extrabold leading-none text-[var(--color-text)] md:text-5xl xl:text-[60px]">
               03
             </span>
           </div>
@@ -170,7 +186,7 @@
 
         <div
           class="flex min-h-[230px] flex-col gap-4 rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] p-7 shadow-[6px_6px_0_2px_#1e1e1e] sm:p-8 xl:p-12">
-          <h2 class="font-raleway text-2xl font-bold leading-tight text-[var(--color-text)] md:text-3xl xl:text-[40px]">
+          <h2 data-aos="zoom-in-down" class="font-raleway text-2xl font-bold leading-tight text-[var(--color-text)] md:text-3xl xl:text-[40px]">
             Application Form
           </h2>
           <p class="font-outfit text-sm font-medium leading-relaxed text-[var(--color-muted)] md:text-base xl:text-xl">
@@ -184,7 +200,7 @@
       <article class="flex flex-col">
         <div class="flex flex-col items-start">
           <div class="rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-6 py-3 shadow-[6px_6px_0_2px_#1e1e1e]">
-            <span class="font-raleway text-4xl font-extrabold leading-none text-[var(--color-text)] md:text-5xl xl:text-[60px]">
+            <span data-aos="zoom-in-down" class="font-raleway text-4xl font-extrabold leading-none text-[var(--color-text)] md:text-5xl xl:text-[60px]">
               04
             </span>
           </div>
@@ -198,7 +214,7 @@
 
         <div
           class="flex min-h-[230px] flex-col gap-4 rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] p-7 shadow-[6px_6px_0_2px_#1e1e1e] sm:p-8 xl:p-12">
-          <h2 class="font-raleway text-2xl font-bold leading-tight text-[var(--color-text)] md:text-3xl xl:text-[40px]">
+          <h2 data-aos="zoom-in-down" class="font-raleway text-2xl font-bold leading-tight text-[var(--color-text)] md:text-3xl xl:text-[40px]">
             Parent Interview
           </h2>
           <p class="font-outfit text-sm font-medium leading-relaxed text-[var(--color-muted)] md:text-base xl:text-xl">
@@ -212,7 +228,7 @@
       <article class="flex flex-col">
         <div class="flex flex-col items-start">
           <div class="rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-6 py-3 shadow-[6px_6px_0_2px_#1e1e1e]">
-            <span class="font-raleway text-4xl font-extrabold leading-none text-[var(--color-text)] md:text-5xl xl:text-[60px]">
+            <span data-aos="zoom-in-down" class="font-raleway text-4xl font-extrabold leading-none text-[var(--color-text)] md:text-5xl xl:text-[60px]">
               05
             </span>
           </div>
@@ -226,7 +242,7 @@
 
         <div
           class="flex min-h-[230px] flex-col gap-4 rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] p-7 shadow-[6px_6px_0_2px_#1e1e1e] sm:p-8 xl:p-12">
-          <h2 class="font-raleway text-2xl font-bold leading-tight text-[var(--color-text)] md:text-3xl xl:text-[40px]">
+          <h2 data-aos="zoom-in-down" class="font-raleway text-2xl font-bold leading-tight text-[var(--color-text)] md:text-3xl xl:text-[40px]">
             Student Assessment
           </h2>
           <p class="font-outfit text-sm font-medium leading-relaxed text-[var(--color-muted)] md:text-base xl:text-xl">
@@ -240,7 +256,7 @@
       <article class="flex flex-col">
         <div class="flex flex-col items-start">
           <div class="rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] px-6 py-3 shadow-[6px_6px_0_2px_#1e1e1e]">
-            <span class="font-raleway text-4xl font-extrabold leading-none text-[var(--color-text)] md:text-5xl xl:text-[60px]">
+            <span data-aos="zoom-in-down" class="font-raleway text-4xl font-extrabold leading-none text-[var(--color-text)] md:text-5xl xl:text-[60px]">
               06
             </span>
           </div>
@@ -254,7 +270,7 @@
 
         <div
           class="flex min-h-[230px] flex-col gap-4 rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-surface)] p-7 shadow-[6px_6px_0_2px_#1e1e1e] sm:p-8 xl:p-12">
-          <h2 class="font-raleway text-2xl font-bold leading-tight text-[var(--color-text)] md:text-3xl xl:text-[40px]">
+          <h2 data-aos="zoom-in-down" class="font-raleway text-2xl font-bold leading-tight text-[var(--color-text)] md:text-3xl xl:text-[40px]">
             Acceptance
           </h2>
           <p class="font-outfit text-sm font-medium leading-relaxed text-[var(--color-muted)] md:text-base xl:text-xl">
@@ -518,7 +534,7 @@
       </div>
 
       <p class="text-center text-xs font-outfit mt-6">
-        Copyright © [2023] Little Learners Academy. All rights reserved.
+        Copyright Â© [2023] Little Learners Academy. All rights reserved.
       </p>
     </div>
   </footer>
@@ -526,3 +542,4 @@
 </body>
 
 </html>
+
